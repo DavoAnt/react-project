@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "flow": "flow"
   },
   "dependencies": {
     "react": "^16.12.0",
@@ -22,5 +23,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "flow-bin": "^0.116.1"
   }
 }
