@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "flow": "flow"
   },
   "dependencies": {
     "react": "^16.12.0",
