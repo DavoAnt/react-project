@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import GlobalStyles from './styles/GlobalStyles';
 import { Blok, Text } from "./components";
+
+
+
 
 
 const App = () => {
@@ -9,7 +12,7 @@ const App = () => {
             <GlobalStyles />
             <h1>Hello!!!</h1>
             <Blok 
-                bgColor="orange"
+                background="orange"
                 width="500px"
                 height="400px"
                 border="4px solid"
@@ -19,9 +22,9 @@ const App = () => {
                 top="50px"
                 left="300px"
                 shadow="1px 1px 5px black"
-                // justifyContent="center"
-                // alignItems="center"
-                // direction="column"
+                justifyContent="center"
+                alignItems="center"
+                direction="column"
                 overflow="auto"
              ></Blok>
              <Text
