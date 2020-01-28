@@ -1,12 +1,23 @@
 import React, {useEffect} from 'react';
 import GlobalStyles from './styles/GlobalStyles';
-import { Blok, Text } from "./components";
-
-
-
+import { Blok, Text, Button } from "./components";
 
 
 const App = () => {
+    useEffect(() =>{
+        fetch('https://api.github.com/users')
+           .then(response =>{
+               response.json()
+               .then((data) => {
+                   const names = data.map(p => p.login);
+                   const avatar = data.map(p => p.avatar_url);
+                   console.log(names, avatar);
+                //    console.log(data[0].login, data[0].avatar_url);
+               })
+           })
+    });
+
+
     return (
         <>
             <GlobalStyles />
@@ -20,13 +31,13 @@ const App = () => {
                 display-flex=" center "                
                 position="relative"
                 top="50px"
-                left="300px"
+                left="350px"
                 shadow="1px 1px 5px black"
                 justifyContent="center"
                 alignItems="center"
                 direction="column"
                 overflow="auto"
-             ></Blok>
+                ></Blok>
              <Text
                 size="50px"
                 color="aqua"
@@ -39,6 +50,16 @@ const App = () => {
                  <span>lorem ipsum </span>
                  
              </Text>
+
+             <Button
+                width="45px"
+                height="30px"
+                background="red"
+             >
+                 ok
+             </Button>
+
+             
         </>
         
     )
