@@ -1,23 +1,25 @@
 import styled from 'styled-components';
 
-
 const Blok = styled.div`
-    ${({width}) => width ? `width: ${width};` : ''}
-    ${({height}) => height ? `height: ${height};` : ''}
-    ${({background}) => background ? `background: ${background};` : ''}
-    ${ ({margin}) => margin ? `margin: ${margin};` : '' }
-    ${({padding}) => padding ? `padding: ${padding};` : ''}
-    ${ ({border}) => border ? `border: ${border};` : '' }
-    ${({radius}) => radius ? `border-radius: ${radius};` : ''}
-    ${({flex}) => flex ? 'display: flex;' : ''}
-    ${({justifyContent}) => justifyContent ? `justify-content : ${justifyContent};` : ''}
-    ${({alignItems}) => alignItems ? `align-items : ${alignItems};` : ''}
-    ${({direction}) => direction ? `flex-direction : ${direction};` : ''}
-    ${({shadow}) => shadow ? `box-shadow : ${shadow};` : ''}
-    ${({position}) => position ? `position : ${position};` : ''}
-    ${({top}) => top ? `top : ${top};` : ''}
-    ${({left}) => left ? `left : ${left};` : ''}
-    ${({overflow}) => overflow ? `overflow : ${overflow};` : ''}
+    
+    ${ ({top}) => top ? `top: ${top};` : ""}
+    ${ ({left}) => left ? `left: ${left};` : ""}
+    ${ ({flex}) => flex ? `display:flex; ` : ""}
+    ${ ({wrap}) => wrap ? 'flex-wrap: wrap; ' : ""}
+    ${ ({width}) => width ? `width: ${width};` : '' }
+    ${ ({border}) => border ? `border: ${border};` : ""}
+    ${ ({margin}) => margin ? `margin: ${margin};` : ""}
+    ${ ({height}) => height ? `height: ${height};` : '' }
+    ${ ({zIndex}) => zIndex ? `z-index: ${zIndex};` : ""}
+    ${ ({padding}) => padding ? `padding: ${padding};` : ""}
+    ${ ({radius}) => radius ? `border-radius: ${radius};` : ""}
+    ${ ({position}) => position ? `position: ${position};` : ""}
+    ${ ({alignItems}) => alignItems ? `align-items:${alignItems} ; ` : ""}
+    ${ ({overflow}) => overflow ? `overflow: ${overflow};` : ""}
+    ${ ({direction}) => direction ? `flex-direction: ${direction};` : ""}
+    ${ ({background}) => background ? `background: ${background};` : '' }
+    ${ ({justifyContent}) => justifyContent ? `justify-content: ${justifyContent};` : ""}
+    
 `;
 
 export default Blok;
